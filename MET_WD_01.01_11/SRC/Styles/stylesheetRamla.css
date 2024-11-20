@@ -1,0 +1,445 @@
+.main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #EBE9E3;
+  color: #004AAD;
+}
+.header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;       
+		padding:10px;
+		width:100%;
+		
+}
+#Logo{
+       display : block;
+	   width : 180px;
+	   height : 200px;
+	   }
+.mainheading 
+{
+        text-align: center;
+		font-size :70px;
+        flex-grow: 1;
+		
+}
+.mainbtn {
+  border: none;
+  border-radius: 10px;
+  background-color :  #004AAD;
+  color : #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 10px 8px;
+  cursor: pointer;
+}
+.mainbtn:hover
+{
+   background-color: gray;
+   color: #004AAD;
+   transform: scale(1.1);
+}
+a 
+{
+  text-decoration: none;
+  
+}
+a:visited
+{
+	color:inherit;
+}
+
+.nav-items {
+   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #004AAD;
+  border-style: solid;
+  border-color: black;
+  list-style-type: none;
+  padding:0;
+  
+}
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+	  display: inline-block;
+	  font-size:20px;
+    }
+
+.nav-items a:hover
+{
+background-color:gray;
+color: #004AAD;
+}
+.nav-item a:visited
+{
+	color:inherit;
+}
+#active {
+	padding: 35px 20px;
+	background-color: #EBE9E3;
+	
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+}  
+
+
+#search-input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+
+#search-submit {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#searchicon
+{
+	 width: 20px;
+  height:20px;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+
+.intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://customsitesmedia.usc.edu/wp-content/uploads/sites/59/2021/01/15235707/Vaccine-adoption-web-824x549.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+.intro h2{
+	font-family:Arial;
+	font-size: 30px;
+	color:#004AAD;
+}
+.intro p {
+  font-size: 20px;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.intro button {
+  background-color: #5edaf0;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.intro button:hover{
+	background-color:gray;
+}
+.services
+{
+	display: flex;  /*flex allow you arrange the items in a flexible manner  */
+	flex-direction: row; /*determines the direction of the main axis properties: row- horizontel, column-vertical, reverse order (row-reverse, cloumn-revers)*/
+    justify-content: space-around; /*Defines how flex items are positioned along the main axis, space-around creates equal space between adjacent item in the flex */
+    align-items: center; /*Specifies how flex items are aligned along the cross axis(in this case the vertical axis. */
+    text-decoration: none; 	/*add visual styling to the text content of an element */
+    padding: 20px 40px; 	/*define the spacing between the content of an element and its borders. */
+    list-style-type: none;  /*used to specify the appearance of the marker or bullet point for list items (<li> elements) in an ordered or unordered list */
+	
+ }
+
+
+.tasks .task-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks .icon
+{
+  width: 100px;
+  height:100px;
+  padding: 12px;
+  vertical-align: middle; 
+  
+	
+}
+
+.tasks .task-heading
+{
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #004AAD;
+  
+}
+
+.tasks a
+{
+	  text-decoration: none;
+      padding: 5px 5px;
+	  display: inline-block;
+}
+
+.services li:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  opacity:1;
+  transform: scale(1.2);
+}
+
+hr
+{
+  color:#004AAD;
+  background-color: #004AAD;
+  height: 2px;
+  width: 100%;
+}
+
+.Recommendheading
+{    
+	color: #004AAD;
+	text-align: center;
+    text-decoration: none;
+	font-size: 24px;
+	font-family: Tahoma;
+	
+}
+.rec
+{
+	background-color:#ADD8E6;
+}
+
+.RecommendedVaccines {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+  padding: 20px 40px;
+  list-style-type: none;
+  
+}
+.vaccine
+{ flex-basis: calc(33.33% - 20px); /* Set the width for each vaccine item (33.33% of the available space) */
+  margin-bottom: 10px;
+ } 
+
+
+.vaccine .icon
+{
+  width: 200px;
+  height:200px;
+  padding: 5px;
+  vertical-align: middle; 
+  
+	
+}
+
+.vaccine-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vaccine-heading
+{
+  font-size: 25px;
+  color: #004AAD;
+  text-decoration: none;
+  margin: 10px 0px 5px 0px;
+  
+}
+
+.vaccinedesc
+{
+  color: #004AAD;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px 0;
+	
+}
+
+.vaccine-content:hover {
+  text-decoration: underline;
+}
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #EBE9E3;
+  
+}
+.footer .col {
+	 display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.footer .col h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  padding: 5px 0;
+  color: #004AAD;
+  text-transform: uppercase;
+}
+.footer .col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .col .icon
+{
+	width: 20px;
+  height:20px;
+  padding: 2px;
+  vertical-align: middle; 
+}
+.footer .col ul li {
+  color:black;
+  font-size: 13px;
+  padding: 5px 0px;
+}
+
+.footer .col a
+
+{
+	color:inherit;
+	
+}
+.footer .col ul li:hover {
+  cursor: pointer;
+  color: gray;
+  font-weight: bold;
+  text-decoration: none;
+  opacity:1;
+  transform: scale(1.2);
+}
+
+.footer .bottom
+{ display:flex;
+  align-items: center;
+}
+.footer .bottom h5
+{
+	padding:5px 5px;
+	color: #004AAD;
+}
+.footer h5:hover
+{
+  cursor: pointer;
+  color:inherit;
+  opacity:1;
+  transform: scale(1.2);
+}
+.appointmentdetails {
+    
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+	
+}
+
+
+	.formdesign {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formdesign fieldset {
+  border: none;
+  padding: 0;
+}
+
+.formdesign label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formdesign input[type="text"],
+.formdesign input[type="number"],
+.formdesign input[type="date"],
+.formdesign input[type="time"],
+.formdesign textarea,
+.formdesign select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.formdesign input[type="radio"],
+.formdesign input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.formdesign input[type="submit"] {
+  background-color: #004AAD;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formdesign input[type="submit"]:hover {
+  background-color: gray;
+}
+
+.formdesign .error-message {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.formdesign a {
+  text-decoration: none;
+  color: #004AAD;
+}
+
+.formdesign a:hover {
+  text-decoration: underline;
+}
